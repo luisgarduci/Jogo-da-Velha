@@ -39,8 +39,8 @@ function JogadaCpu() {
             if (cards[random].innerHTML === "") {
                cards[random].innerHTML = "O";
                cards[random].style.color = "#F1B237";
-               Jogadas.push("O")
-               Victory("O", "You lost :(", "#F2B236", "#1E3640", score_cpu)
+               Jogadas.push("O");
+               Victory("O", "You lost :(", "#F2B236", "#1E3640")
                 Draw()
                setTimeout(() => {
                 playerTurn = true;
@@ -69,7 +69,7 @@ cards.forEach((card, index) => {
                 card.innerHTML = "X";
                 card.style.color = "#31C6BD";
                 Jogadas.push("X")
-                Victory("X", "You won!", "#31C4BE", "#1E3640", score_player)
+                Victory("X", "You won!", "#31C4BE", "#1E3640")
                 Draw()
                 //timeout para o bot não jogar instantâneamente
                 setTimeout(() => {
@@ -99,9 +99,9 @@ function Draw() {
     }
 }
 
-//verificando se houve vitória, por isso estou passando os parâmetros e chamando essa função, (a) seria a identificação do player (x ou o), msgWinner receberá o innerHTML do paramêtro
+//verificando se houve vitória, por isso estou passando os parâmetros e chamando essa função, (a) seria a identificação do player (x ou o), msg é a mensagem que será disparada quando acabar o game("You won", "You lost" ou "Tie"), background tem relação com a cor de fundo do card, dependendo do resultado a cor de fundo do card alternará entre #31C4BE(player) e #F2B236(bot), e o color tem a mesma função, porém ao invés de alterar a cor de fundo, alterará a cor da fonte 
 
-function Victory(a, msg, background, color, score) {
+function Victory(a, msg, background, color) {
    if (cards[0].innerHTML === a && cards[1].innerHTML === a && cards[2].innerHTML === a) {
     for (let i = 0; i < 3; i++) {
         cards[i].style.backgroundColor = background;
@@ -115,11 +115,11 @@ function Victory(a, msg, background, color, score) {
       gameover = true;
       if (a === "X") {
         playerPoints++
-        score.innerHTML = playerPoints
+        score_player.innerHTML = playerPoints
     }
     else {
         cpuPoints++
-        score.innerHTML = cpuPoints
+        score_cpu.innerHTML = cpuPoints
     }
    }
    else if (cards[3].innerHTML === a && cards[4].innerHTML === a && cards[5].innerHTML === a) {
@@ -135,11 +135,11 @@ function Victory(a, msg, background, color, score) {
     gameover = true;
     if (a === "X") {
         playerPoints++
-        score.innerHTML = playerPoints
+        score_player.innerHTML = playerPoints
     }
     else {
         cpuPoints++
-        score.innerHTML = cpuPoints
+        score_cpu.innerHTML = cpuPoints
     }
    }
 
@@ -156,11 +156,11 @@ function Victory(a, msg, background, color, score) {
     gameover = true;
     if (a === "X") {
         playerPoints++
-        score.innerHTML = playerPoints
+        score_player.innerHTML = playerPoints
     }
     else {
         cpuPoints++
-        score.innerHTML = cpuPoints
+        score_cpu.innerHTML = cpuPoints
     }
    }
 
@@ -177,11 +177,11 @@ function Victory(a, msg, background, color, score) {
     gameover = true;
     if (a === "X") {
         playerPoints++
-        score.innerHTML = playerPoints
+        score_player.innerHTML = playerPoints
     }
     else {
         cpuPoints++
-        score.innerHTML = cpuPoints
+        score_cpu.innerHTML = cpuPoints
     }
    }
 
@@ -200,11 +200,11 @@ function Victory(a, msg, background, color, score) {
       gameover = true;
       if (a === "X") {
         playerPoints++
-        score.innerHTML = playerPoints
+        score_player.innerHTML = playerPoints
     }
     else {
         cpuPoints++
-        score.innerHTML = cpuPoints
+        score_cpu.innerHTML = cpuPoints
     }
    }
    
@@ -221,11 +221,11 @@ function Victory(a, msg, background, color, score) {
     gameover = true;
     if (a === "X") {
         playerPoints++
-        score.innerHTML = playerPoints
+        score_player.innerHTML = playerPoints
     }
     else {
         cpuPoints++
-        score.innerHTML = cpuPoints
+        score_cpu.innerHTML = cpuPoints
     }
    }
 
@@ -242,11 +242,11 @@ function Victory(a, msg, background, color, score) {
     gameover = true;
     if (a === "X") {
         playerPoints++
-        score.innerHTML = playerPoints
+        score_player.innerHTML = playerPoints
     }
     else {
         cpuPoints++
-        score.innerHTML = cpuPoints
+        score_cpu.innerHTML = cpuPoints
     }
    }
 
@@ -263,11 +263,11 @@ function Victory(a, msg, background, color, score) {
     gameover = true;
     if (a === "X") {
         playerPoints++
-        score.innerHTML = playerPoints
+        score_player.innerHTML = playerPoints
     }
     else {
         cpuPoints++
-        score.innerHTML = cpuPoints
+        score_cpu.innerHTML = cpuPoints
     }
    }
 }
