@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1A2B33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+}
+
+main > section#informations {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 115px;
+    align-items: center;
+}
+
+main > section#informations > #turn {
+    background-color: #1E3640;
+    color: #A6BFC7;
+    border: 1px solid black;
+    padding: 8px;
+    width: 100px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+main > section#informations > #restart {
+    background-color: #A6BFC7;
+    color: gray;
+    width: 25px;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+main > section#container-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 450px;
+    gap: 20px;
+}
+
+main > section#container-game > .card {
+    width: 120px;
+    background-color: #1E3640;
+    height: 110px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 55px;
+    text-align: center;
+    line-height: 100px;
+}
+
+main > #container-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main > #container-score > .scores {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+main > #container-score > #player {
+    background-color: #31C4BE;
+}
+
+main > #container-score > #tie {
+    background-color: #ABBFCA;
+}
+
+main > #container-score > #cpu {
+    background-color: #F2B236;
+}
+
+main > section#result {
+    width: 98vw;
+    height: 190px;
+    position: absolute;
+    background-color: #1E3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    display: none;
+}
+
+main > section#result > #container-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+main > section#result > #container-buttons > button {
+    width: 100px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+main > section#result > #container-buttons > button#next {
+    background-color: #F2B236;
+}
+
+main > section#result > #msg {
+    color: white;
+}
+
+

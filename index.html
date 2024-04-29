@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <section id="informations">
+          <h3 id="identificator">XO</h3>
+          <h3 id="turn">X Turn</h3>
+          <i class="fa-solid fa-rotate-right" id="restart"></i>
+        </section>
+        <section id="container-game">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        </section>
+        <section id="container-score">
+            <div id="player" class="scores">
+                <h3>X (YOU)</h3>
+                <h3 id="score_player">0</h3>
+            </div>
+            <div id="tie" class="scores">
+            <h3>TIES</h3>
+            <h3 id="score_ties">0</h3>
+            </div>
+            <div id="cpu" class="scores">
+            <h3>O (CPU)</h3>
+            <h3 id="score_cpu">0</h3>
+            </div>
+        </section>
+        <section id="result">
+            <p id="msg">teste</p>
+            <h1 id="winner">teste</h1>
+            <div id="container-buttons">
+                <button id="quit">Quit</button>
+                <button id="next">Next Round</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="scripts/script.js"></script>
+</html>
