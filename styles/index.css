@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   background-color: #1A2B33;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main > .containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+main > #containerLinks {
+    flex-direction: column;
+    gap: 15px;
+}
+
+main > .containers > #x {
+    color: #31C4BE;
+}
+
+main > .containers > #o {
+    color: #F2B236;
+}
+
+main > #containerLinks > a {
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    color: #1E3640;
+}
+
+main > #containerLinks > #linkbot {
+    background-color: #F2B236;
+}
+
+main > #containerLinks > #linkplayer {
+    background-color: #31C4BE;
+}
